@@ -1,7 +1,26 @@
 aid: pigeonly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pigeonly.png
 name: Pigeonly
-description: Pigeonly is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Pigeonly is an inmate-communication service that helps families and friends stay connected with
+  incarcerated loved ones across more than 4,000 correctional facilities in the United States. Through
+  its website and mobile apps, users can send photos, letters, postcards, greeting cards, and printed
+  articles, and set up more affordable prison phone calls, all in a few clicks. Backed by 500 Global,
+  Pigeonly is a consumer-facing platform; as of this enrichment pass it publishes no public API,
+  developer portal, developer documentation, OAuth surface, or machine-readable specifications, so this
+  profile captures its identity, public web properties, and probed domain-security posture rather than
+  API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/pigeonly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Inmate Communication
+- Corrections
+- Prison Calls
+- Photo Sharing
+- Mail
+- Consumer
+- Communications
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,26 @@ maintainers:
 common:
 - type: Website
   url: https://pigeonly.com
+- type: Pricing
+  url: https://pigeonly.com/pricing
+- type: TermsOfService
+  url: https://pigeonly.com/terms
+- type: PrivacyPolicy
+  url: https://pigeonly.com/privacy
+- type: Blog
+  url: https://pigeonly.com/blog
+- type: Support
+  url: https://pigeonly.com/contact
+- type: GettingStarted
+  url: https://pigeonly.com/how-it-works
+- type: SignUp
+  url: https://pigeon.ly/search
+- type: Login
+  url: https://pigeon.ly/login
+- type: DomainSecurity
+  url: security/pigeonly-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
